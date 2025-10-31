@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- External CSS for custom styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h4>Event Registration Form</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="registrationForm">
+                            <div class="mb-3">
+                                <label for="attendeeName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="attendeeName" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="attendeeEmail" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="attendeeEmail" placeholder="Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="attendeePhone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="attendeePhone" placeholder="Enter your phone number" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="workshopSelection" class="form-label">Choose a Workshop Session</label>
+                                <select class="form-select" id="workshopSelection" required>
+                                    <option value="" disabled selected>Select a session</option>
+                                    <option value="session1">Workshop A: Introduction to Programming</option>
+                                    <option value="session2">Workshop B: Advanced Web Development</option>
+                                    <option value="session3">Workshop C: Data Science Basics</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-primary w-100">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JS for handling the form (optional) -->
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Registration Successful!");
+        });
+    </script>
+</body>
+</html>

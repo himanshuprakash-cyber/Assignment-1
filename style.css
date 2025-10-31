@@ -1,0 +1,68 @@
+/* Custom Styles for Event Registration Page */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 10px;
+}
+
+.card-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #0069d9;
+    color: white;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+/* Form Elements Styling */
+.form-label {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.form-control, .form-select {
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: 1rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Styling */
+.btn-primary {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        margin-top: 20px;
+    }
+
+    .form-control, .form-select {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 10px;
+    }
+}
